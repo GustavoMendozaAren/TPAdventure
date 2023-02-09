@@ -10,10 +10,10 @@ public class Moon : MonoBehaviour
 
     void Update()
     {
-        contador += Time.deltaTime*.05f;
+        contador += Time.deltaTime*.008f;
 
-        x = 20 * Mathf.Cos(contador);
-        y = 20 * Mathf.Sin(contador);
+        x = 20 * Mathf.Cos(contador -(3.1416f/2));
+        y = 20 * Mathf.Sin(contador - (3.1416f / 2));
         z = 0f;
 
         transform.position = new Vector3(sphere.transform.position.x + x, sphere.transform.position.y + y, sphere.transform.position.z + z);
