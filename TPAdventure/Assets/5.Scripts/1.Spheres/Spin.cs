@@ -10,13 +10,13 @@ public class Spin : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(new Vector3(0f, 0.015f, 0f));
+        transform.Rotate(new Vector3(0.008f, 0f, 0f));
 
-        contador += Time.deltaTime * .005f;
+        contador += Time.deltaTime * .002f;
 
-        x = 60f * Mathf.Cos((3.1416f / 4f) + contador);
-        y = 0f;
-        z = 60f * Mathf.Sin((3.1416f / 4f) + contador);
+        x = 0f;
+        y = 200f * Mathf.Sin((-3.1416f / 10f) + contador);
+        z = 200f * Mathf.Cos((-3.1416f / 10f) + contador);
 
         transform.position = new Vector3(x, y, z);
     }
