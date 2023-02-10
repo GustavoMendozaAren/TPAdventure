@@ -50,22 +50,22 @@ public class PlayerScript : MonoBehaviour
 
     void PlayerMoveKeyboard()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             moveVertical = 1;
             Anim.SetTrigger(MyTags.WALK_TRIGGER);
         }
-        else
-        {
-            moveVertical = 0;
-            Anim.SetTrigger(MyTags.STOP_TRIGGER);
-        }
-
-        /*if (Input.GetKeyUp(KeyCode.W))
+        /*else
         {
             moveVertical = 0;
             Anim.SetTrigger(MyTags.STOP_TRIGGER);
         }*/
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            moveVertical = 0;
+            Anim.SetTrigger(MyTags.STOP_TRIGGER);
+        }
     }
 
     void MoveAndRotate()
