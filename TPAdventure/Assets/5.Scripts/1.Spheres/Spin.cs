@@ -15,8 +15,8 @@ public class Spin : MonoBehaviour
         contador += Time.deltaTime * .002f;
 
         x = 0f;
-        y = 200f * Mathf.Sin((-3.1416f / 10f) + contador);
-        z = 200f * Mathf.Cos((-3.1416f / 10f) + contador);
+        y = 200f * Mathf.Sin(contador);
+        z = 200f * Mathf.Cos(contador);
 
         transform.position = new Vector3(x, y, z);
     }
