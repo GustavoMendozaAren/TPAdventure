@@ -6,11 +6,6 @@ public class HorizontalSphere : MonoBehaviour
 {
     float contador = 0f, x, y, z;
 
-    private void Start()
-    {
-        transform.Rotate(0f, 0f, 45f);
-    }
-
     void Update()
     {
         RotEsfera();
