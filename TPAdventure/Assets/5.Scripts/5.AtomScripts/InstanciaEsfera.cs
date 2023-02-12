@@ -5,10 +5,10 @@ using UnityEngine;
 public class InstanciaEsfera : MonoBehaviour
 {
     float contgen = 0f;
-    float InstTime = (Mathf.PI / 20f), i = 0f;
-    float InstTime2 = (Mathf.PI / 20f), j = 0f;
-    float InstTime3 = (Mathf.PI / 20f), k = 0f;
-    float InstTime4 = (Mathf.PI / 20f), p = 0f;
+    float InstTime = 360f / 40f, i = 0f;
+    float InstTime2 = 360f / 40f, j = 0f;
+    float InstTime3 = 360f / 40f, k = 0f;
+    float InstTime4 = 360f / 40f, p = 0f;
 
     public GameObject Esfera;
     public GameObject HorizontalEsfera;
@@ -16,36 +16,36 @@ public class InstanciaEsfera : MonoBehaviour
     public GameObject SphereTilt2;
     void Update()
     {
-        contgen += Time.deltaTime * .5f;
-        
-        
-        if (contgen >= (Mathf.PI / 2f))
+        contgen += .11f;
+
+
+        if (contgen >= 360f / 4f)
         {
             Instancia();
         }
-        /*if (contgen >= (Mathf.PI / 2f))
+        if (contgen >= (360f / 2f))
         {
             InstanciaT1();
-        }*/
-        if (contgen >= Mathf.PI)
+        }
+        if (contgen >= (360f / 4f) * 3f)
         {
             InstanciaH();
         }
-        /*if (contgen >= Mathf.PI)
+        if (contgen >= 360f)
         {
             InstanciaT2();
-        }*/
+        }
     }
 
     void Instancia()
     {
-        InstTime -= Time.deltaTime * .5f;
+        InstTime -= .11f;
         if (InstTime <= 0)
         {
             i++;
-            InstTime = (Mathf.PI / 20f);
+            InstTime = 360f / 40f;
 
-            if (i <= 40)
+            if (i <= 40f)
             {
                 Instantiate(Esfera, new Vector3(0f, 0f, 0f), Esfera.transform.rotation);
             }
@@ -54,13 +54,13 @@ public class InstanciaEsfera : MonoBehaviour
 
     void InstanciaH()
     {
-        InstTime2 -= Time.deltaTime * .5f;
+        InstTime2 -= .11f;
         if (InstTime2 <= 0)
         {
             j++;
-            InstTime2 = (Mathf.PI / 20f);
+            InstTime2 = 360f / 40f;
 
-            if (j <= 40)
+            if (j <= 40f)
             {
                 Instantiate(HorizontalEsfera, new Vector3(0f, 0f, 0f), HorizontalEsfera.transform.rotation);
             }
@@ -69,13 +69,13 @@ public class InstanciaEsfera : MonoBehaviour
 
     void InstanciaT1()
     {
-        InstTime3 -= Time.deltaTime * .5f;
+        InstTime3 -= .11f;
         if (InstTime3 <= 0)
         {
             k++;
-            InstTime3 = (Mathf.PI / 20f);
+            InstTime3 = 360f / 40f;
 
-            if (k <= 40)
+            if (k <= 40f)
             {
                 Instantiate(SphereTilt1, new Vector3(0f, 0f, 0f), SphereTilt1.transform.rotation);
             }
@@ -84,13 +84,13 @@ public class InstanciaEsfera : MonoBehaviour
 
     void InstanciaT2()
     {
-        InstTime4 -= Time.deltaTime * .5f;
+        InstTime4 -= .11f;
         if (InstTime4 <= 0)
         {
             p++;
-            InstTime4 = (Mathf.PI / 20f);
+            InstTime4 = 360f/40f;
 
-            if (p <= 40)
+            if (p <= 40f)
             {
                 Instantiate(SphereTilt2, new Vector3(0f, 0f, 0f), SphereTilt2.transform.rotation);
             }

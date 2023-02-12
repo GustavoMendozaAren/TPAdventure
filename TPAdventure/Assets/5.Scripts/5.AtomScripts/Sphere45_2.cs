@@ -10,12 +10,13 @@ public class Sphere45_2 : MonoBehaviour
 
     void Update()
     {
-        contador += Time.deltaTime * .5f;
+        contador += .11f;
 
-        x = 65 * (Mathf.Cos(contador + (Mathf.PI / 2f)));
+        x = 100f * (Mathf.Cos((contador * Mathf.PI / 180f) + (Mathf.PI / 2f)));
         y = 0f;
-        z = 65 * (Mathf.Sin(contador + (Mathf.PI / 2f)));
+        z = 100f * (Mathf.Sin((contador * Mathf.PI / 180f) + (Mathf.PI / 2f)));
 
         transform.localPosition = new Vector3(x, y, z);
+
     }
 }
