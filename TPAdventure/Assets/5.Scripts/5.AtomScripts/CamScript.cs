@@ -7,7 +7,7 @@ public class CamScript : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(new Vector3(0f, 0f, 0.05f));
+        transform.Rotate(new Vector3(0f, 0f, 0.02f));
 
     }
 }

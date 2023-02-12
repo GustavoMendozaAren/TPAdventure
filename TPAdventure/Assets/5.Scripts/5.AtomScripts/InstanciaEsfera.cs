@@ -12,7 +12,7 @@ public class InstanciaEsfera : MonoBehaviour
     public GameObject HorizontalEsfera;
     void Update()
     {
-        contgen += Time.deltaTime * .5f;
+        contgen += Time.deltaTime * .62f;
         Instancia();
         if (contgen >= (3.1416f / 4f))
         {
