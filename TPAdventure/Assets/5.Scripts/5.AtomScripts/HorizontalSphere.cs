@@ -15,9 +15,9 @@ public class HorizontalSphere : MonoBehaviour
     {
         contador += Time.deltaTime * .5f;
 
-        x = 65 * Mathf.Cos(contador + (3.1416f/2f));
+        x = 65 * Mathf.Cos(contador + (Mathf.PI / 2f));
         y = 0f;
-        z = 65 * Mathf.Sin(contador + (3.1416f / 2f));
+        z = 65 * Mathf.Sin(contador + (Mathf.PI / 2f));
 
         transform.position = new Vector3(x, y, z);
 

@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sphere45 : MonoBehaviour
+public class Sphere45_2 : MonoBehaviour
 {
     float rotation_speed;
 
     float contador = 0f, x, y, z;
-     
+
     void Update()
     {
         contador += Time.deltaTime * .5f;
@@ -18,5 +18,4 @@ public class Sphere45 : MonoBehaviour
 
         transform.localPosition = new Vector3(x, y, z);
     }
-
 }
