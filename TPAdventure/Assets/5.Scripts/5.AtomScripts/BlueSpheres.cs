@@ -13,11 +13,11 @@ public class BlueSpheres : MonoBehaviour
 
     void RotEsfera()
     {
-        contador += Time.deltaTime * .5f;
+        contador += .11f;
 
         x = 0f;
-        y = 65 * Mathf.Sin(contador);
-        z = 65 * Mathf.Cos(contador);
+        y = 100f * Mathf.Sin(contador * Mathf.PI / 180f);
+        z = 100f * Mathf.Cos(contador * Mathf.PI / 180f);
 
         transform.position = new Vector3(x, y, z);
 
