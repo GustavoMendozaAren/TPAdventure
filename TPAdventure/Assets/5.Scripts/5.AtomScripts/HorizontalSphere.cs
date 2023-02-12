@@ -13,13 +13,13 @@ public class HorizontalSphere : MonoBehaviour
 
     void RotEsfera()
     {
-        contador += .11f;
+        contador += .22f;
 
-        x = 100f * Mathf.Cos((contador * Mathf.PI / 180f) + (Mathf.PI / 2f));
-        y = 0f;
+        x = 0f;
+        y = 100f * Mathf.Cos((contador * Mathf.PI / 180f) + (Mathf.PI / 2f));
         z = 100f * Mathf.Sin((contador * Mathf.PI / 180f) + (Mathf.PI / 2f));
 
-        transform.position = new Vector3(x, y, z);
+        transform.localPosition = new Vector3(x, y, z);
 
     }
 }

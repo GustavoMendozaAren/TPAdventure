@@ -10,7 +10,7 @@ public class CamScript : MonoBehaviour
     float acc = 100f;
     void Update()
     {
-        transform.Rotate(new Vector3(0f, 0f, 0.02f));
+        transform.Rotate(new Vector3(0f, 0f, 0.11f));
 
         cont2 += .11f;
 
@@ -19,7 +19,6 @@ public class CamScript : MonoBehaviour
             if (i < -2f)
             {
                 i =  i + .01f;
-                print("Si");
             }
             else
             {

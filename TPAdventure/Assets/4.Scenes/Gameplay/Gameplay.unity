@@ -212,6 +212,99 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 951948988213719973, guid: bebf3a99fd2b7294fadf47ad1097d5ad, type: 3}
   m_PrefabInstance: {fileID: 1790071310}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &567072897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 567072899}
+  - component: {fileID: 567072898}
+  m_Layer: 0
+  m_Name: Spot Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &567072898
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567072897}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 17.79
+  m_Range: 242.9
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &567072899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567072897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &595478543
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -5781,8 +5874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 960a432dbd1b1b24999db0fa969b1b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Esfera: {fileID: 6598856874642387026, guid: 86c3a6e3cc0e34a4aa3e477d98db9252, type: 3}
-  HorizontalEsfera: {fileID: 8540777697272612490, guid: 2684f9421cbcf5e49a9e30deef7fc631, type: 3}
+  Esfera: {fileID: 6504201459965418421, guid: 5d1523ce0dcc6d54d8318de79c3c15cd, type: 3}
+  HorizontalEsfera: {fileID: 8005763936787532790, guid: 6705dca75e73641409faababb24d635b, type: 3}
   SphereTilt1: {fileID: 5104002472394398904, guid: d6af3cab47732e94c8ec743a83906242, type: 3}
   SphereTilt2: {fileID: 8482789298905728533, guid: 88bf5a1168b1cee4b8c778b258c91c07, type: 3}
 --- !u!1 &1037075856
@@ -6016,6 +6109,7 @@ GameObject:
   - component: {fileID: 1238201138}
   - component: {fileID: 1238201137}
   - component: {fileID: 1238201136}
+  - component: {fileID: 1238201139}
   m_Layer: 0
   m_Name: Centro
   m_TagString: Untagged
@@ -6069,7 +6163,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bcd1f4b6d53dab547a2ea1193180dcbb, type: 2}
+  - {fileID: 2100000, guid: 11b701931f643344f9ac75a08297a8a0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6099,6 +6193,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238201134}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1238201139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238201134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7550d319a04c304d9d0e00494cf5124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1295436359
 GameObject:
   m_ObjectHideFlags: 0
