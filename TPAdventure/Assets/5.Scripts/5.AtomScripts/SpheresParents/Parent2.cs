@@ -9,7 +9,7 @@ public class Parent2 : MonoBehaviour
     {
         x = 0f;
         y = 0f;
-        z = .11f/4f;
+        z = Time.deltaTime * 15f;
 
         transform.Rotate(x, y, z, Space.World);
 

@@ -12,6 +12,6 @@ public class RotCent : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(new Vector3(0f, 0f, 0.11f));
+        transform.Rotate(new Vector3(0f, 0f, Time.deltaTime * 12.5f));
     }
 }
