@@ -9,7 +9,7 @@ public class Parent45Dg2 : MonoBehaviour
     {
         x = 0f;
         y = 0f;
-        z = .11f / 2f;
+        z = .11f / 4f;
 
         transform.Rotate(x, y, z, Space.World);
 
