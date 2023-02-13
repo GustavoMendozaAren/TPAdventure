@@ -41,7 +41,7 @@ public class InstanciaEsfera : MonoBehaviour
 
     void Instancia()
     {
-        InstTime -= .22f;
+        InstTime -= .11f;
         if (InstTime <= 0)
         {
             i++;
@@ -56,7 +56,7 @@ public class InstanciaEsfera : MonoBehaviour
 
     void InstanciaH()
     {
-        InstTime2 -= .22f;
+        InstTime2 -= .11f;
         if (InstTime2 <= 0)
         {
             j++;
