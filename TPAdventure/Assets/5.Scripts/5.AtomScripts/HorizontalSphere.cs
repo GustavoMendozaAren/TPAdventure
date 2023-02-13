@@ -13,7 +13,7 @@ public class HorizontalSphere : MonoBehaviour
 
     void RotEsfera()
     {
-        contador += .11f;
+        contador += Time.deltaTime * 60f;
 
         x = 0f;
         y = 100f * Mathf.Cos((contador * Mathf.PI / 180f) + (Mathf.PI / 2f));

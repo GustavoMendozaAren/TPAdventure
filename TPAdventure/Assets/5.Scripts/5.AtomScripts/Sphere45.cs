@@ -10,7 +10,7 @@ public class Sphere45 : MonoBehaviour
      
     void Update()
     {
-        contador += .22f;
+        contador += Time.deltaTime * 2.5f;
 
         x = 100f * (Mathf.Cos((contador * Mathf.PI / 180f) + (Mathf.PI / 2f)));
         y = 0f;
