@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e4b160b6411a77341a54f458475ba47b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.3731195, g: 0.3807401, b: 0.35872737, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -203,6 +203,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8cd45a913548d9049a225704aba18a7b, type: 3}
       propertyPath: m_Name
       value: EsferaSmooth
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8cd45a913548d9049a225704aba18a7b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cd45a913548d9049a225704aba18a7b, type: 3}
@@ -427,7 +431,7 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
@@ -441,7 +445,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 26.991467
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -6123,6 +6127,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Esfera: {fileID: 6504201459965418421, guid: 5d1523ce0dcc6d54d8318de79c3c15cd, type: 3}
   HorizontalEsfera: {fileID: 8005763936787532790, guid: 6705dca75e73641409faababb24d635b, type: 3}
+  Esfera2: {fileID: 6504201459965418421, guid: 5d1523ce0dcc6d54d8318de79c3c15cd, type: 3}
+  Esfera3: {fileID: 6504201459965418421, guid: 5d1523ce0dcc6d54d8318de79c3c15cd, type: 3}
 --- !u!1 &1037075856
 GameObject:
   m_ObjectHideFlags: 3
@@ -6953,7 +6959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1551031426
 Transform:
   m_ObjectHideFlags: 0
@@ -7693,7 +7699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1935989049
 MonoBehaviour:
   m_ObjectHideFlags: 0

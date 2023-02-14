@@ -6,21 +6,19 @@ public class BlueSpheres : MonoBehaviour
 {
     float contador = 0f, x, y, z;
 
-    void Update()
+    void FixedUpdate()
     {
         RotEsfera();
     }
-
     void RotEsfera()
     {
-        contador += Time.deltaTime * 60f;
+        contador += Time.deltaTime * 40f;
 
         x = 0f;
         y = 100f * Mathf.Sin((contador * Mathf.PI) / 180f);
         z = 100f * Mathf.Cos((contador * Mathf.PI)/ 180f);
 
         transform.localPosition = new Vector3(x, y, z);
-
     }
 
 
