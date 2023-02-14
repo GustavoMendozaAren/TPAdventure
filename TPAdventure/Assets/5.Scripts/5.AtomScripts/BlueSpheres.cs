@@ -12,7 +12,7 @@ public class BlueSpheres : MonoBehaviour
     }
     void RotEsfera()
     {
-        contador += Time.deltaTime * 40f;
+        contador += Time.deltaTime * 36f;
 
         x = 0f;
         y = 100f * Mathf.Sin((contador * Mathf.PI) / 180f);

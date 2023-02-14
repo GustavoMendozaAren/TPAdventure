@@ -6127,8 +6127,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Esfera: {fileID: 6504201459965418421, guid: 5d1523ce0dcc6d54d8318de79c3c15cd, type: 3}
   HorizontalEsfera: {fileID: 8005763936787532790, guid: 6705dca75e73641409faababb24d635b, type: 3}
-  Esfera2: {fileID: 6504201459965418421, guid: 5d1523ce0dcc6d54d8318de79c3c15cd, type: 3}
-  Esfera3: {fileID: 6504201459965418421, guid: 5d1523ce0dcc6d54d8318de79c3c15cd, type: 3}
+  Esfera2: {fileID: 5104002472394398904, guid: d6af3cab47732e94c8ec743a83906242, type: 3}
+  Esfera3: {fileID: 8482789298905728533, guid: 88bf5a1168b1cee4b8c778b258c91c07, type: 3}
 --- !u!1 &1037075856
 GameObject:
   m_ObjectHideFlags: 3

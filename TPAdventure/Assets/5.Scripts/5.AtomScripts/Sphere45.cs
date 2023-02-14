@@ -8,13 +8,13 @@ public class Sphere45 : MonoBehaviour
 
     float contador = 0f, x, y, z;
      
-    void Update()
+    void FixedUpdate()
     {
-        contador += Time.deltaTime * 2.5f;
+        contador += Time.deltaTime * 36f;
 
-        x = 100f * (Mathf.Cos((contador * Mathf.PI / 180f) + (Mathf.PI / 2f)));
-        y = 0f;
-        z = 100f * (Mathf.Sin((contador * Mathf.PI / 180f) + (Mathf.PI / 2f)));
+        x = 0f;
+        y = 100f * Mathf.Sin((contador * Mathf.PI) / 180f);
+        z = 100f * Mathf.Cos((contador * Mathf.PI) / 180f);
 
         transform.localPosition = new Vector3(x, y, z);
     }
