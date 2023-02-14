@@ -5,11 +5,11 @@ using UnityEngine;
 public class Parent45Dg2 : MonoBehaviour
 {
     float contador = 0f, x, y, z;
-    void Update()
+    void FixedUpdate()
     {
         x = 0f;
         y = 0f;
-        z = .11f / 4f;
+        z = Time.deltaTime * 9f;
 
         transform.Rotate(x, y, z, Space.World);
 
