@@ -60,12 +60,19 @@ public class PlayerScript : MonoBehaviour
             moveVertical = 0;
             Anim.SetTrigger(MyTags.STOP_TRIGGER);
         }*/
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            moveVertical = 2;
+            Anim.SetTrigger(MyTags.RUN_TRIGGER);
+        }
 
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.E))
         {
             moveVertical = 0;
             Anim.SetTrigger(MyTags.STOP_TRIGGER);
         }
+
+
     }
 
     void MoveAndRotate()
